@@ -15,6 +15,7 @@ int main(int argc, char const *argv[]) {
 		model.LoadGraph();
 		model.LoadLabel();
 		model.InitNeighbourCommunity(model.GetOptimalCommunityCount());
+		model.SaveData("init");
 		model.MLEGradAscent();
 	} catch (exception &e) {
 		cerr << "Exception caught: " << e.what() << endl;

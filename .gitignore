@@ -1,3 +1,6 @@
+# sublime files
+*.sublime-*
+
 # Data files
 *.in
 *.eta

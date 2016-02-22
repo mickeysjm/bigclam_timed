@@ -37,11 +37,11 @@ public:
 	double EtaLikelihood(vector<vector<double>> &eta);
 	bool EtaGoStepSizeByLineSearch(vector<vector<double>> &gradient, const int MAX_ITER = 10);
 	void UpdateEta();
-	int MLEGradAscent(const int MAX_ITER = 100, const int RECORD_PERIOD = 10);
+	void MLEGradAscent(const int MAX_ITER = 100, const int RECORD_PERIOD = 10);
 	string GenerateModelName(int iteration);
 	void SaveF(string &model_name);
 	void SaveEta(string &model_name);
-	void SaveData(int iteration);
+	void SaveData(string model_name);
 
 private:
 	//parameters

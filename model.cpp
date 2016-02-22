@@ -28,6 +28,7 @@ void Model::Init(Utils & utils) {
 }
 
 void Model::LoadGraph() {
+	system("dir");
 	ifstream fin(input_graph_filename_);
 	assert(fin && "open graph file failed");
 
@@ -54,7 +55,7 @@ void Model::LoadLabel() {
 	assert(fin && "open label file failed");
 
 	string s;
-	int node_count, node, ref;
+	int node_count, node;
 	fin >> node_count;
 	label_.resize(node_count);
 	while (fin >> node) {
@@ -95,7 +96,7 @@ int Model::CountDifferent(vector<int> v1, vector<int> v2) {
 void Model::Resize() {
 	F_.resize(graph_.GetNodeCount(), vector<double>(community_count_, 0));
 	newF_.resize(graph_.GetNodeCount(), vector<double>(community_count_, 0));
-	Eta_.resize(community_count_, vector<double>(community_count_, 0));
+	Eta_.resize(community_count_, vector<double>(community_count_, 1.0 / community_count_));
 	newEta_.resize(community_count_, vector<double>(community_count_, 0));
 	EtaF_.resize(graph_.GetNodeCount(), vector<double>(community_count_, 0));
 	sumF_.insert(pair<int, vector<double>>(label_[0].date, vector<double>(community_count_, 0)));
@@ -242,9 +243,9 @@ void Model::FGradientForRow(int u, vector<double> &gradient) {
 	for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 		int v = graph_.GetInNeighbour(u)[i];
 		double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-		double argument = exp(fu_eta_fv) / (1 - exp(fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
-		for (int i = 0; i < community_count_; ++i)
-			gradient[i] += argument * EtaF_[v][i];
+		double argument = exp(-fu_eta_fv) / (1 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+		for (int c = 0; c < community_count_; ++c)
+			gradient[c] += argument * EtaF_[v][c];
 	}
 	map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
 	assert((it != sumEtaF_.end()) && "No this date");
@@ -257,7 +258,7 @@ double Model::FLikelihoodForRow(int u, vector<double> &Fu) {
 	for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 		int v = graph_.GetInNeighbour(u)[i];
 		double fu_eta_fv = VectorDot(Fu, EtaF_[v]);
-		double Lu = log(1 - exp(fu_eta_fv));
+		double Lu = log(1 - exp(-fu_eta_fv));
 		L += Lu + fu_eta_fv;
 	}
 	map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
@@ -270,7 +271,7 @@ double Model::FLikelihoodForRow(int u, vector<double> &Fu) {
 	for (int i = 0; i < graph_.GetOutNeighbour(u).size(); ++i) {
 		int v = graph_.GetOutNeighbour(u)[i];
 		double fv_eta_fu = VectorDot(F_[v], EtaFu);
-		double Lu = log(1 - exp(fv_eta_fu));
+		double Lu = log(1 - exp(-fv_eta_fu));
 		L += Lu + fv_eta_fu;
 	}
 	it = backsumF_.find(label_[u].date);
@@ -301,6 +302,14 @@ bool Model::FGoStepSizeByLineSearch(int u, vector<double> &gradient, const int M
 	return 0;
 }
 
+template<typename T>
+void PrintVector(string name, vector<T> v) {
+	cout << name << ' ';
+	for (int i = 0; i < v.size(); ++i)
+		cout << v[i] << '\t';
+	cout << endl;
+}
+
 void Model::UpdateF(vector<int> &order) {
 	CalculateEtaF(Eta_);
 	AccumulateSumEtaF();
@@ -309,9 +318,12 @@ void Model::UpdateF(vector<int> &order) {
 	for (int i = 0; i < order.size(); ++i) {
 		int u = order[i];
 		FGradientForRow(u, gradient);
+		//PrintVector("gradient:", gradient);
+		//system("PAUSE");
 		if (Norm2(gradient) < 1e-4)
-			continue;
-		FGoStepSizeByLineSearch(u, gradient);
+			newF_[u] = F_[u];
+		else
+			FGoStepSizeByLineSearch(u, gradient);
 	}
 	F_ = newF_;
 }
@@ -323,9 +335,9 @@ void Model::EtaGradient(vector<vector<double>> &gradient) {
 		for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 			int v = graph_.GetInNeighbour(u)[i];
 			double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-			double argument = exp(fu_eta_fv) / (1 - exp(fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
-			for (int i = 0; i < community_count_; ++i)
-				tmp[i] += argument * F_[v][i];
+			double argument = exp(-fu_eta_fv) / (1 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+			for (int c = 0; c < community_count_; ++c)
+				tmp[c] += argument * F_[v][c];
 		}
 		map<int, vector<double>>::iterator it = sumF_.find(label_[u].date);
 		assert((it != sumF_.end()) && "No this date");
@@ -345,7 +357,7 @@ double Model::EtaLikelihood(vector<vector<double>> &eta) {
 		for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 			int v = graph_.GetInNeighbour(u)[i];
 			double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-			double Lu = log(1 - exp(fu_eta_fv));
+			double Lu = log(1 - exp(-fu_eta_fv));
 			L += Lu + fu_eta_fv;
 		}
 		map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
@@ -392,8 +404,7 @@ void Model::UpdateEta() {
 }
 
 string Model::GenerateModelName(int iteration) {
-	if (iteration < 0)
-		return "final";
+	assert((iteration >= 0) && "iteration should be greater than zero");
 	ostringstream ss;
 	ss << setw(5) << iteration;
 	string s = ss.str();
@@ -427,14 +438,12 @@ void Model::SaveEta(string &model_name) {
 	fout.close();
 }
 
-void Model::SaveData(int iteration) {
-	string model_name = GenerateModelName(iteration);
-
+void Model::SaveData(string model_name) {
 	SaveF(model_name);
 	SaveEta(model_name);
 }
 
-int Model::MLEGradAscent(const int MAX_ITER, const int RECORD_PERIOD) {
+void Model::MLEGradAscent(const int MAX_ITER, const int RECORD_PERIOD) {
 	int iter = 0;
 	vector<int> order(graph_.GetNodeCount());
 	for (int i = 0; i < order.size(); ++i)
@@ -448,10 +457,10 @@ int Model::MLEGradAscent(const int MAX_ITER, const int RECORD_PERIOD) {
 
 		if (iter % RECORD_PERIOD == 0) {
 			cout << iter << " iterations. " << TimeString() << endl;
-			SaveData(iter);
+			SaveData(GenerateModelName(iter));
 		}
 	}
-	SaveData(-1);
+	SaveData("final");
 }
 
 
