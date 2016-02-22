@@ -40,8 +40,15 @@ void Model::LoadGraph() {
 	while (getline(fin, s, '\n')) {
 		istringstream iss(s);
 		iss >> node;
-		while (iss >> ref)
-			graph_.AddEdge(id2order_.find(ref)->second, id2order_.find(node)->second);
+		map<int, int>::iterator it = id2order_.find(node);
+		assert((it != id2order_.end()) && "No such paper in label file");
+		node = it->second;
+		while (iss >> ref) {
+			it = id2order_.find(ref);
+			assert((it != id2order_.end()) && "No such paper in label file");
+			ref = it->second;
+			graph_.AddEdge(ref, node);
+		}
 	}
 	for (int i = 0; i < graph_.GetNodeCount(); ++i) {
 		sort(graph_.GetInNeighbour(i).begin(), graph_.GetInNeighbour(i).end());
@@ -142,6 +149,10 @@ void Model::InitNeighbourCommunity(int community_count) {
 	}
 	sort(conductances.begin(), conductances.end());
 	cout << "conductance computation completed " << TimeString() << endl;
+	ofstream fout("conductance.txt");
+	for(int i = 0; i < conductances.size(); ++i)
+		fout << conductances[i].first << '\t' << conductances[i].second << '\n';
+	fout.close();
 
 	//choose nodes with local minimum in conductance
 	vector<bool> not_local_min(graph_.GetNodeCount(), false);
@@ -246,13 +257,21 @@ void Model::FGradientForRow(int u, vector<double> &gradient) {
 	for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 		int v = graph_.GetInNeighbour(u)[i];
 		double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-		double argument = exp(-fu_eta_fv) / (1 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+		double argument = exp(-fu_eta_fv) / (1.00000000001 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
 		for (int c = 0; c < community_count_; ++c)
 			gradient[c] += argument * EtaF_[v][c];
+		for (int i = 0; i < gradient.size(); ++i)
+			if (isnan(gradient[i])) {
+				cout << "nan occur!!" << argument << ' ' << fu_eta_fv;
+			}
 	}
 	map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
 	assert((it != sumEtaF_.end()) && "No this date");
 	VectorSubTo(it->second, gradient);
+	for (int i = 0; i < gradient.size(); ++i)
+		if (isnan(gradient[i])) {
+			cout << "nan occur!!";
+		}
 }
 
 double Model::FLikelihoodForRow(int u, vector<double> &Fu) {
@@ -305,14 +324,6 @@ bool Model::FGoStepSizeByLineSearch(int u, vector<double> &gradient, const int M
 	return 0;
 }
 
-template<typename T>
-void PrintVector(string name, vector<T> v) {
-	cout << name << ' ';
-	for (int i = 0; i < v.size(); ++i)
-		cout << v[i] << '\t';
-	cout << endl;
-}
-
 void Model::UpdateF(vector<int> &order) {
 	CalculateEtaF(Eta_);
 	AccumulateSumEtaF();
@@ -338,7 +349,7 @@ void Model::EtaGradient(vector<vector<double>> &gradient) {
 		for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 			int v = graph_.GetInNeighbour(u)[i];
 			double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-			double argument = exp(-fu_eta_fv) / (1 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+			double argument = exp(-fu_eta_fv) / (1.00000000001 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
 			for (int c = 0; c < community_count_; ++c)
 				tmp[c] += argument * F_[v][c];
 		}

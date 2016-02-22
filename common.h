@@ -1,14 +1,17 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include <string>
+#include <cstring>
 #include <vector>
 #include <ctime>
 using namespace std;
 inline string TimeString() {
 	time_t timep;
 	time(&timep);
-	string t = ctime(&timep);
-	return t.substr(0, t.length() - 1);
+	char buffer[100];
+	ctime_s(buffer, 100, &timep);
+	buffer[strlen(buffer) - 1] = '\0';
+	return buffer;
 }
 
 template<typename T>
@@ -48,6 +51,14 @@ void VectorSubTo(const vector<T> &v1, vector<T> &v2) {
 	assert((v1.size() == v2.size()) && "vector's length not match");
 	for (int i = 0; i < v1.size(); ++i)
 		v2[i] -= v1[i];
+}
+
+template<typename T>
+void PrintVector(string name, vector<T> v) {
+	cout << name << ' ';
+	for (int i = 0; i < v.size(); ++i)
+		cout << v[i] << '\t';
+	cout << endl;
 }
 
 #endif
