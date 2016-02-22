@@ -2,7 +2,6 @@
 *.sublime-*
 
 # Data files
-*.in
 *.eta
 *.f
 *.out

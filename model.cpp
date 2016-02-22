@@ -28,7 +28,7 @@ void Model::Init(Utils & utils) {
 }
 
 void Model::LoadGraph() {
-	system("dir");
+	// system("dir");
 	ifstream fin(input_graph_filename_);
 	assert(fin && "open graph file failed");
 
@@ -41,7 +41,7 @@ void Model::LoadGraph() {
 		istringstream iss(s);
 		iss >> node;
 		while (iss >> ref)
-			graph_.AddEdge(ref, node);
+			graph_.AddEdge(id2order_.find(ref)->second, id2order_.find(node)->second);
 	}
 	for (int i = 0; i < graph_.GetNodeCount(); ++i) {
 		sort(graph_.GetInNeighbour(i).begin(), graph_.GetInNeighbour(i).end());
@@ -62,6 +62,9 @@ void Model::LoadLabel() {
 		label_[node].id = node;
 		fin >> label_[node].date;
 	}
+	sort(label_.begin(), label_.end());
+	for(int i = 0; i < label_.size(); ++i)
+		id2order_.insert(pair<int, int>(label_[i].id, i));
 	cerr << "Load Label Done. " << TimeString() << endl;
 }
 

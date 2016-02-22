@@ -1,0 +1,1815 @@
+
+--- Module:   model.cpp (C++)
+                   _
+  typedef decltype(nullptr)	nullptr_t;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\x86_64-w64-mingw32\bits\c++config.h 
+    200  Error 40: Undeclared identifier 'nullptr'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\x86_64-w64-mingw32\bits\c++config.h 
+    200  Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\x86_64-w64-mingw32\bits\c++config.h 
+    200  Error 19: Useless Declaration
+                        _
+    struct __is_integer<char16_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    185  Error 40: Undeclared identifier 'char16_t'
+                        _
+    struct __is_integer<char32_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    192  Error 40: Undeclared identifier 'char32_t'
+                        _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    193  Error 39: Redefinition of symbol 'std::__is_integer<int>' conflicts
+    with line 185
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    185  Info 830: Location cited in prior message
+                        _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    215  Error 39: Redefinition of symbol 'std::__is_integer<int>' conflicts
+    with line 192
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    192  Info 830: Location cited in prior message
+                                  _
+  __is_null_pointer(std::nullptr_t)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    160  Error 40: Undeclared identifier 'nullptr_t'
+  _
+  { return true; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    161  Error 10: Expecting ';'
+                       _
+  template<typename _Tp, bool = std::__is_integer<_Tp>::__value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 40: Undeclared identifier '_Tp'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 40: Undeclared identifier '_Tp'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 129: declaration expected, identifier 'std::__is_integer<int>::__value'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    165  Error 10: Expecting identifier or other declarator
+    _
+    { typedef double __type; };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    167  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    167  Error 10: Expecting identifier or other declarator
+                       _
+  template<typename _Tp>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    172  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    172  Error 10: Expecting identifier or other declarator
+                    _
+    struct __promote<_Tp, false>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    173  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    173  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    173  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    173  Error 10: Expecting identifier or other declarator
+                    _
+    struct __promote<long double>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    177  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    177  Error 10: Expecting identifier or other declarator
+                    _
+    struct __promote<double>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    181  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    181  Error 10: Expecting identifier or other declarator
+                    _
+    struct __promote<float>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    185  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    185  Error 10: Expecting identifier or other declarator
+                       _
+  template<typename _Tp, typename _Up,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    188  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    188  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    188  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    188  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Tp2 = typename __promote<_Tp>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 129: declaration expected, identifier '__gnu_cxx::_Tp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    189  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Up2 = typename __promote<_Up>::__type>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 129: declaration expected, identifier '__gnu_cxx::_Up2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    190  Error 10: Expecting identifier or other declarator
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    192  Error 129: declaration expected, identifier '__gnu_cxx::__promote_2'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    192  Error 10: Expecting identifier or other declarator
+                       _
+  template<typename _Tp, typename _Up, typename _Vp,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 129: declaration expected, identifier '__gnu_cxx::_Vp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    196  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Tp2 = typename __promote<_Tp>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 129: declaration expected, identifier '__gnu_cxx::_Tp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    197  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Up2 = typename __promote<_Up>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 129: declaration expected, identifier '__gnu_cxx::_Up2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    198  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Vp2 = typename __promote<_Vp>::__type>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 129: declaration expected, identifier '__gnu_cxx::_Vp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 129: declaration expected, identifier '__gnu_cxx::_Vp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    199  Error 10: Expecting identifier or other declarator
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    201  Error 129: declaration expected, identifier '__gnu_cxx::__promote_3'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    201  Error 10: Expecting identifier or other declarator
+                       _
+  template<typename _Tp, typename _Up, typename _Vp, typename _Wp,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 129: declaration expected, identifier '__gnu_cxx::_Vp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 129: declaration expected, identifier '__gnu_cxx::_Wp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    205  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Tp2 = typename __promote<_Tp>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 129: declaration expected, identifier '__gnu_cxx::_Tp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 129: declaration expected, identifier '__gnu_cxx::_Tp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    206  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Up2 = typename __promote<_Up>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 129: declaration expected, identifier '__gnu_cxx::_Up2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 129: declaration expected, identifier '__gnu_cxx::_Up' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    207  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Vp2 = typename __promote<_Vp>::__type,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 129: declaration expected, identifier '__gnu_cxx::_Vp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 129: declaration expected, identifier '__gnu_cxx::_Vp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    208  Error 10: Expecting identifier or other declarator
+                         _
+           typename _Wp2 = typename __promote<_Wp>::__type>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 129: declaration expected, identifier '__gnu_cxx::_Wp2' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 129: declaration expected, identifier '__gnu_cxx::__promote'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 129: declaration expected, identifier '__gnu_cxx::_Wp' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 129: declaration expected, identifier '__gnu_cxx::__type'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    209  Error 10: Expecting identifier or other declarator
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    211  Error 129: declaration expected, identifier '__gnu_cxx::__promote_4'
+    ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ext\type_traits.h 
+    211  Error 10: Expecting identifier or other declarator
+                       _
+      static constexpr _Tp                  value = __v;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Error 10: Expecting ';'
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 36: redefining the storage class of symbol 'std::integral_constant<<1>,<2>>::constexpr'
+    (member of structure vs. static data), conflicts with line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 10: Expecting ';'
+                  _
+    constexpr _Tp integral_constant<_Tp, __v>::value;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    84  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    84  Error 10: Expecting ';'
+
+  While instantiating struct std::integral_constant<bool,0> at File
+    C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits
+    line 106
+                       _
+      static constexpr _Tp                  value = __v;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    106  Info 831: Reference cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 36: redefining the storage class of symbol 'std::integral_constant<bool,0>::constexpr'
+    (member of structure vs. static data), conflicts with line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 148: member 'std::integral_constant<bool,0>::constexpr'
+    previously declared at line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 10: Expecting ';'
+
+  While instantiating struct std::integral_constant<bool,1> at File
+    C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits
+    line 129
+                       _
+      static constexpr _Tp                  value = __v;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    129  Info 831: Reference cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 36: redefining the storage class of symbol 'std::integral_constant<bool,1>::constexpr'
+    (member of structure vs. static data), conflicts with line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 148: member 'std::integral_constant<bool,1>::constexpr'
+    previously declared at line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 10: Expecting ';'
+                                _
+    struct __is_integral_helper<char16_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    209  Error 40: Undeclared identifier 'char16_t'
+                                _
+    struct __is_integral_helper<char32_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    213  Error 40: Undeclared identifier 'char32_t'
+                                _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    214  Error 39: Redefinition of symbol 'std::__is_integral_helper<int>'
+    conflicts with line 209
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    209  Info 830: Location cited in prior message
+                                _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    226  Error 39: Redefinition of symbol 'std::__is_integral_helper<int>'
+    conflicts with line 213
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    213  Info 830: Location cited in prior message
+                                                  _
+    : public integral_constant<bool, __is_enum(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    402  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    402  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                   _
+    : public integral_constant<bool, __is_union(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    408  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    408  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                   _
+    : public integral_constant<bool, __is_class(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    414  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    414  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+_
+    struct is_function<_Res(_ArgTypes...)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 39: Redefinition of symbol 'std::is_function<<1>>' conflicts
+    with line 419
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    419  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes...) &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    427  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 423
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 423
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    424  Error 1220: Internal Error; contact Gimpel Software.
+                                           _
+    struct is_function<_Res(_ArgTypes...) &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    427  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    427  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    431  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 423
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    435  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 423
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 423
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    423  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    432  Error 1220: Internal Error; contact Gimpel Software.
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    436  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    436  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes......) &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    439  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 435
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    435  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    443  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 435
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    435  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 435
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    435  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    440  Error 1220: Internal Error; contact Gimpel Software.
+                                               _
+    struct is_function<_Res(_ArgTypes......) &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    443  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    443  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) const>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    447  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 439
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    439  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes...) const &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    451  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 439
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    439  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 439
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    439  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    448  Error 1220: Internal Error; contact Gimpel Software.
+                                                _
+    struct is_function<_Res(_ArgTypes...) const &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    451  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    451  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) const &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    455  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 447
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    447  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) const>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    459  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 447
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    447  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 447
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    447  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    456  Error 1220: Internal Error; contact Gimpel Software.
+                                             _
+    struct is_function<_Res(_ArgTypes......) const>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    459  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    459  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes......) const &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    463  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 455
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    455  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) const &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    467  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 455
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    455  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 455
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    455  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    464  Error 1220: Internal Error; contact Gimpel Software.
+                                                   _
+    struct is_function<_Res(_ArgTypes......) const &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    467  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    467  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    471  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 463
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    463  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes...) volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    475  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 463
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    463  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 463
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    463  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    472  Error 1220: Internal Error; contact Gimpel Software.
+                                                   _
+    struct is_function<_Res(_ArgTypes...) volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    475  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    475  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    479  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 471
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    471  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    483  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 471
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    471  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 471
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    471  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    480  Error 1220: Internal Error; contact Gimpel Software.
+                                                     _
+    struct is_function<_Res(_ArgTypes......) volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    483  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    483  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes......) volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    487  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 479
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    479  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    491  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 479
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    479  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 479
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    479  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    488  Error 1220: Internal Error; contact Gimpel Software.
+                                                      _
+    struct is_function<_Res(_ArgTypes......) volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    491  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    491  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) const volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    495  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 487
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    487  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes...) const volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    499  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 487
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    487  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 487
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    487  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    496  Error 1220: Internal Error; contact Gimpel Software.
+                                                _
+    struct is_function<_Res(_ArgTypes...) const volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    499  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    499  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes...) const volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    503  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 495
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    495  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) const volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    507  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 495
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    495  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 495
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    495  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    504  Error 1220: Internal Error; contact Gimpel Software.
+                                                   _
+    struct is_function<_Res(_ArgTypes......) const volatile>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    507  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    507  Error 1220: Internal Error; contact Gimpel Software.
+                      _
+    struct is_function<_Res(_ArgTypes......) const volatile &>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    511  Error 36: redefining the storage class of symbol 'std::is_function'
+    (class template vs. type), conflicts with line 503
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    503  Info 830: Location cited in prior message
+_
+    struct is_function<_Res(_ArgTypes......) const volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    515  Error 10: Expecting ')'
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 36: redefining the storage class of symbol 'std::is_function<<1>>'
+    (type vs. class template), conflicts with line 503
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    503  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 39: Redefinition of symbol 'std::is_function' conflicts with
+    line 503
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    503  Info 830: Location cited in prior message
+    _
+    : public true_type { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    512  Error 1220: Internal Error; contact Gimpel Software.
+                                                   _
+    struct is_function<_Res(_ArgTypes......) const volatile &&>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    515  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    515  Error 1220: Internal Error; contact Gimpel Software.
+                                         _
+    struct __is_null_pointer_helper<std::nullptr_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    525  Error 40: Undeclared identifier 'nullptr_t'
+                                         _
+    : public __not_<__or_<is_function<_Tp>, is_reference<_Tp>,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    565  Error 151: Token '_Tp' inconsistent with abstract type
+
+  While instantiating struct std::__not_<std::__or_<std::is_function<<1>>>> at
+    File C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits
+    line 565
+                                                _
+    : public integral_constant<bool, !_Pp::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    148  Error 1013: Symbol 'value' not a member of class '__or_'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    565  Info 831: Reference cited in prior message
+
+                                                _
+    : public integral_constant<bool, !_Pp::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    148  Error 1048: expected a constant expression
+_
+    struct __is_referenceable<_Res(_Args...)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    606  Error 10: Expecting ')'
+    _
+    : public true_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 39: Redefinition of symbol 'std::__is_referenceable<<1>>'
+    conflicts with line 601
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    601  Info 830: Location cited in prior message
+_
+    struct __is_referenceable<_Res(_Args......)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Error 10: Expecting ')'
+    _
+    : public true_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 1220: Internal Error; contact Gimpel Software.
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 36: redefining the storage class of symbol 'std::__is_referenceable<<1>>'
+    (type vs. class template), conflicts with line 606
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    606  Info 830: Location cited in prior message
+    _
+    : public true_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 39: Redefinition of symbol 'std::__is_referenceable' conflicts
+    with line 606
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    606  Info 830: Location cited in prior message
+    _
+    : public true_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    607  Error 1220: Internal Error; contact Gimpel Software.
+    _
+    : public true_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    612  Error 98: Recovery Error (variadic template could not be resolved)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    612  Error 1220: Internal Error; contact Gimpel Software.
+                                                     _
+    : public integral_constant<bool, __is_trivial(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    638  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    638  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                                _
+    : public integral_constant<bool, __is_trivially_copyable(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    644  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    644  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                             _
+    : public integral_constant<bool, __is_standard_layout(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    650  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    650  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                 _
+    : public integral_constant<bool, __is_pod(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    657  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    657  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                          _
+    : public integral_constant<bool, __is_literal_type(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    663  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    663  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                   _
+    : public integral_constant<bool, __is_empty(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    669  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    669  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                         _
+    : public integral_constant<bool, __is_polymorphic(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    675  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    675  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                      _
+    : public integral_constant<bool, __is_abstract(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    690  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    690  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                   _
+      typedef decltype(__test<_Tp>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    762  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    762  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    762  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    763  Error 96: Unmatched left brace for template __is_destructible_impl on
+    line 761
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    761  Info 830: Location cited in prior message
+                                                                  _
+      static integral_constant<bool, noexcept(declval<_Tp&>().~_Tp())>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    799  Error 50: Attempted to take the address of a non-lvalue
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    799  Error 50: Attempted to take the address of a non-lvalue
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    799  Error 50: Attempted to take the address of a non-lvalue
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    799  Error 50: Attempted to take the address of a non-lvalue
+                                   _
+      typedef decltype(__test<_Tp>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    810  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    810  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    810  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    811  Error 96: Unmatched left brace for template __is_nt_destructible_impl
+    on line 809
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    809  Info 830: Location cited in prior message
+                                   _
+      typedef decltype(__test<_Tp>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    853  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    853  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    853  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    854  Error 96: Unmatched left brace for template __is_default_constructible_impl
+    on line 852
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    852  Info 830: Location cited in prior message
+                                          _
+      typedef decltype(__test<_From, _To>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    914  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    914  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    914  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    915  Error 96: Unmatched left brace for template __is_static_castable_impl
+    on line 913
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    913  Info 830: Location cited in prior message
+                                         _
+      typedef decltype(__test<_Tp, _Arg>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    948  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    948  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    948  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    949  Error 96: Unmatched left brace for template __is_direct_constructible_impl
+    on line 947
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    947  Info 830: Location cited in prior message
+                       _
+      static constexpr bool value = type::value;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    982  Error 10: Expecting ';'
+                                               _
+      typedef __and_<__not_<is_function<__src_t>>, 
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1004  Error 151: Token '__src_t' inconsistent with abstract type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1004  Error 151: Token '__src_t' inconsistent with abstract type
+                                                _
+model.cpp  0  Error 10: Expecting identifier or other declarator
+                                                 _
+		    is_base_of<__dst_t, __src_t>>> type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1006  Error 10: Expecting ';'
+                       _
+      static constexpr bool value = type::value;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1007  Error 10: Expecting ';'
+                                           _
+                          is_function<_From>>>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    968  Error 151: Token '_From' inconsistent with abstract type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    968  Error 24: Expected an expression, found '>'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    968  Error 40: Undeclared identifier 'value'
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+    _
+    : public __is_nary_constructible<_Tp, _Args...>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1074  Error 39: Redefinition of symbol 'std::__is_constructible_impl<<1>,<2>>'
+    conflicts with line 1078
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1078  Info 830: Location cited in prior message
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1093  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1093  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1093  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1093  Error 40: Undeclared identifier 'value'
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1111  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1111  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1111  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1111  Error 40: Undeclared identifier 'value'
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+    _
+    : public integral_constant<bool, noexcept(_Tp(declval<_Args>()...))>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1158  Error 39: Redefinition of symbol 'std::__is_nt_constructible_impl<<1>,<2>>'
+    conflicts with line 1162
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1162  Info 830: Location cited in prior message
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1179  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1179  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1179  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1179  Error 40: Undeclared identifier 'value'
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1197  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1197  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1197  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1197  Error 40: Undeclared identifier 'value'
+                                        _
+      typedef decltype(__test<_Tp, _Up>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1228  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1228  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1228  Error 1098: Function template specialization '__test<<1>,<2>>(void)'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1228  Error 36: redefining the storage class of symbol '__test(void)' (type
+    vs. function), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1228  Error 10: Expecting ';'
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1237  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1237  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1237  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1237  Error 40: Undeclared identifier 'value'
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1255  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1255  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1255  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1255  Error 40: Undeclared identifier 'value'
+                                                                             _
+    : public integral_constant<bool, noexcept(declval<_Tp>() = declval<_Up>())>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1275  Error 63: Expected an lvalue
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1285  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1285  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1285  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1285  Error 40: Undeclared identifier 'value'
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1303  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1303  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1303  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1303  Error 40: Undeclared identifier 'value'
+    _
+    : public __is_nary_constructible<_Tp, _Args...>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1074  Error 39: Redefinition of symbol 'std::__is_constructible_impl<<1>>'
+    conflicts with line 1083
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1083  Info 830: Location cited in prior message
+                                             _
+      typedef decltype(__test<_Tp, _Args...>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1061  Error 10: Expecting '{'
+    _
+    };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1062  Error 96: Unmatched left brace for template __is_nary_constructible_impl
+    on line 1060
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1060  Info 830: Location cited in prior message
+                    _
+      static_assert(sizeof...(_Args) > 1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1068  Error 102: Illegal parameter specification
+                                                                  _
+			__is_trivially_constructible(_Tp, _Args...)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1325  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1325  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                        _
+			__is_trivially_constructible(_Tp, const _Tp&)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 10: Expecting ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 10: Expecting ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1339  Error 26: Expected an expression, found ')'
+                                                        _
+			__is_trivially_constructible(_Tp, _Tp&&)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 26: Expected an expression, found ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1347  Error 26: Expected an expression, found ')'
+                                                     _
+			__is_trivially_assignable(_Tp, _Up)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1355  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1355  Error 78: Symbol '_Up' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1355  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1355  Error 78: Symbol '_Up' typedef'ed at location unknown used in
+    expression
+                                                     _
+			__is_trivially_assignable(_Tp&, const _Tp&)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 26: Expected an expression, found ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 10: Expecting ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 26: Expected an expression, found ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 10: Expecting ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1363  Error 26: Expected an expression, found ')'
+                                                     _
+			__is_trivially_assignable(_Tp&, _Tp&&)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 26: Expected an expression, found ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 26: Expected an expression, found ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 26: Expected an expression, found ','
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1371  Error 26: Expected an expression, found ')'
+                                                          _
+			      __has_trivial_destructor(_Tp)>>::type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1378  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1378  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                                  _
+    : public integral_constant<bool, __has_trivial_constructor(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1384  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1384  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                           _
+    : public integral_constant<bool, __has_trivial_copy(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1390  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1390  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                             _
+    : public integral_constant<bool, __has_trivial_assign(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1396  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1396  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                                 _
+    : public integral_constant<bool, __has_virtual_destructor(_Tp)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1402  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1402  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+                                                           _
+    : public integral_constant<std::size_t, __alignof__(_Tp)> { };
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1411  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1411  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+
+  While instantiating struct std::integral_constant<unsigned long long,0> at
+    File C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits
+    line 1416
+                       _
+      static constexpr _Tp                  value = __v;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1416  Info 831: Reference cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 36: redefining the storage class of symbol 'std::integral_constant<unsigned
+    long long,0>::constexpr' (member of structure vs. static data), conflicts
+    with line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 148: member 'std::integral_constant<unsigned long
+    long,0>::constexpr' previously declared at line 71
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    71  Info 830: Location cited in prior message
+
+                _
+      constexpr operator value_type() const { return value; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    74  Error 10: Expecting ';'
+                                                       _
+    : public integral_constant<bool, __is_base_of(_Base, _Derived)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1460  Error 78: Symbol '_Base' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1460  Error 78: Symbol '_Derived' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1460  Error 78: Symbol '_Base' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1460  Error 78: Symbol '_Derived' typedef'ed at location unknown used in
+    expression
+                                          _
+      typedef decltype(__test<_From, _To>(0)) type;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1485  Error 102: Illegal parameter specification
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1485  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1485  Error 1098: Function template specialization '__test<<1>,<2>>(void)'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1485  Error 36: redefining the storage class of symbol '__test(void)' (type
+    vs. function), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1485  Error 10: Expecting ';'
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1586  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1586  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1586  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1586  Error 40: Undeclared identifier 'value'
+                                                  _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1600  Error 78: Symbol 'std::__is_referenceable' typedef'ed at line 611
+    used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    611  Info 830: Location cited in prior message
+                                                      _
+  template<typename _Tp, bool = __is_referenceable<_Tp>::value>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1600  Error 78: Symbol '_Tp' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1600  Error 55: Bad type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1600  Error 40: Undeclared identifier 'value'
+                         _
+    struct __make_signed<char16_t> : __make_signed<uint_least16_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1801  Error 40: Undeclared identifier 'char16_t'
+                         _
+    struct __make_signed<char32_t> : __make_signed<uint_least32_t>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1804  Error 40: Undeclared identifier 'char32_t'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1804  Error 39: Redefinition of symbol 'std::__make_signed<int>' conflicts
+    with line 1801
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1801  Info 830: Location cited in prior message
+                                                         _
+  template<typename _Tp, bool = __or_<__is_referenceable<_Tp>,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1940  Error 78: Symbol 'std::__or_<std::__is_referenceable<<1>>>'
+    typedef'ed at line 1940 used in expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1940  Info 830: Location cited in prior message
+                                                         _
+  template<typename _Tp, bool = __or_<__is_referenceable<_Tp>,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    1940  Error 1059: Can't convert from 'std::__or_<std::__is_referenceable<<1>>>'
+    to 'bool'
+                                                                _
+    const size_t aligned_union<_Len, _Types...>::alignment_value;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    2040  Error 10: Expecting identifier or other declarator
+         _
+#include <vector>
+graph.h  3  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\vector'
+         _
+#include <string>
+common.h  3  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\string'
+         _
+#include <vector>
+common.h  4  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\vector'
+_
+#endif
+
+common.h  53  Info 783: Line does not end with new-line
+         _
+#include <iostream>
+model.cpp  6  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iostream'
+         _
+#include <ctime>
+model.cpp  7  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ctime'
+model.cpp  7  Warning 451: Header file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ctime'
+    repeatedly included but does not have a standard include guard
+Error 10: Expecting '}'
+Error 96: Unmatched left brace for namespace std on line 53, file
+    C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\type_traits 
+    53  Info 830: Location cited in prior message
+
+    --- Wrap-up for Module: model.cpp
+
+Info 766: Header file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\sstream'
+    not used in module 'model.cpp'

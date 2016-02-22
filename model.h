@@ -9,6 +9,9 @@ using namespace std;
 struct Label {
 	int id, date;
 	string name;
+	bool operator<(const Label &label2) {
+		return date < label2.date;
+	}
 };
 
 class Model {
@@ -71,5 +74,6 @@ private:
 	map<int, vector<double>> sumF_; // accumulated sum of F, Dates * Coms
 	map<int, vector<double>> sumEtaF_; // accumulated sum of EtaF, Dates * Coms
 	map<int, vector<double>> backsumF_; // accumulated sum from tail to head of F, Dates * Coms
+	map<int, int> id2order_; // convert paper id to order.
 };
 #endif

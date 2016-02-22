@@ -61,49 +61,7 @@ int CountDifferent(vector<int> v1, vector<int> v2) {
 }
 
 int main(int argc, char const *argv[]) {
-	// vector<vector<int>> v;
-	// v.resize(10, vector<int>(10));
-	// for (int i = 0; i < 10; ++i)
-	// 	for (int j = 0; j < 10; ++j)
-	// 		v[i][j] = i * 10 + j;
-	// for (int i = 0; i < 10; ++i) {
-	// 	for (int j = 0; j < 10; ++j)
-	// 		printf("%d ", v[i][j]);
-	// 	printf("\n");
-	// }
-	// Test test;
-	// printf("123\n");
-	// const vector<Tmp> &v = test.Get(0);
-	// // printf("%d\n", test.Get(0).size());
-	// printf("321\n");
-	// cout << TimeString();
-	// default_random_engine e(time(0));
-	// uniform_int_distribution<int> u(0,2);
-	// for(int i = 0; i < 30; ++i)
-	// 	printf("%d ", u(e));
-	// ifstream fin("not_exist.txt");
-	// cout << (bool)fin;
-	// ifstream fin("test.txt");
-	// string s;
-	// while(getline(fin, s, '\n')){
-	// 	printf("|%s|\n", s.c_str());
-	// }
-	// vector<vector<Tmp>> v1(3, vector<Tmp>(3)), v2;
-	// vector<vector<Tmp>> v3(4, vector<Tmp>(3));
-	// v3 = v1;
-	// printf("------------\n");
-	// v3.insert(v3.begin(), v1.begin(), v1.end());
-	// v3.assign(v1.begin(), v1.end());
-	// printf("%d %d\n", v3.size(), v3.capacity());
-	// v3.resize(2);
-	// int a[] = {1, 2, 3};
-	// vector<int> v(a, a + 3);
-	// v.clear();
-	// printf("%d %d\n", v.size(), v.capacity());
-	// v.resize(3);
-	// for (auto i : v)
-	// 	printf("%d ", i);
-	string a = "sad";
-	cout << a << flush;
-	cout << '\r' << 'b';
+	int n = 10;
+	char* buffer = new char[n];
+	buffer[n] = 0;
 }

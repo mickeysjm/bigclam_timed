@@ -12,8 +12,8 @@ int main(int argc, char const *argv[]) {
 		Utils utils(argc, argv);
 		Model model;
 		model.Init(utils);
-		model.LoadGraph();
 		model.LoadLabel();
+		model.LoadGraph();
 		model.InitNeighbourCommunity(model.GetOptimalCommunityCount());
 		model.SaveData("init");
 		model.MLEGradAscent();

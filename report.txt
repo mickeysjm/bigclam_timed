@@ -1,0 +1,1372 @@
+
+D:\Sam\Lab\AGM\AGM_PLSI\bigclam_timed>"C:\lint\Lint-nt"  +v  -i"C:\lint"  std.lnt  -os(_LINT.TMP) model.cpp         
+C:\lint\co-gcc.lnt  88  Warning 686: Option '+cpp(.cc,.C)' is suspicious
+    because of 'Upper case characters within extension '.C'; these will match
+    lower case when +fff is on; try -fff'
+
+D:\Sam\Lab\AGM\AGM_PLSI\bigclam_timed>type _LINT.TMP   | more
+
+--- Module:   model.cpp (C++)
+                              _
+#... uct __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __t
+__INT_N(__GLIBCXX_TYPE_INT_N_0)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    270  Error 40: Undeclared identifier '__int128'
+                              _
+#... t __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __typ
+__INT_N(__GLIBCXX_TYPE_INT_N_0)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    270  Error 39: Redefinition of symbol 'std::__is_integer<int>' conflicts
+    with line 214
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    214  Info 830: Location cited in prior message
+                              _
+#... integer<unsigned __int128> { enum { __value = 1 }; typedef __true_type __t
+__INT_N(__GLIBCXX_TYPE_INT_N_0)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    270  Error 151: Token '__int128' inconsistent with abstract type
+                              _
+#... teger<unsigned __int128> { enum { __value = 1 }; typedef __true_type __typ
+__INT_N(__GLIBCXX_TYPE_INT_N_0)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    270  Error 39: Redefinition of symbol 'std::__is_integer<unsigned int>'
+    conflicts with line 221
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\cpp_type_traits.h 
+    221  Info 830: Location cited in prior message
+         _
+#include <vector>
+graph.h  3  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\vector'
+                  _
+        Graph() = default;
+graph.h  10  Error 1008: In declaration of 'Graph::Graph(void)', did not expect
+    '= default'; text ignored
+                              _
+        Graph(int node_count) : node_count_(node_count), out_edges_(node_count), in_edges_(node_count) {}
+graph.h  11  Note 1931: Constructor 'Graph::Graph(int)' can be used for
+    implicit conversions -- More Effective C++ #5
+                   _
+        ~Graph() = default;
+graph.h  12  Error 1008: In declaration of 'Graph::~Graph(void)', did not
+    expect '= default'; text ignored
+                                                                   _
+        Graph(int node_count) : node_count_(node_count), out_edges_(node_count), in_edges_(node_count) {}
+graph.h  11  Info 1729: Initializer inversion detected for member
+    'Graph::out_edges_' -- Effective C++ #13
+graph.h  11  Info 732: Loss of sign (arg. no. 1) (int to unsigned long long)
+graph.h  11  Info 747: Significant prototype coercion (arg. no. 1) int to
+    unsigned long long
+graph.h  11  Info 732: Loss of sign (arg. no. 1) (int to unsigned long long)
+graph.h  11  Info 747: Significant prototype coercion (arg. no. 1) int to
+    unsigned long long
+graph.h  11  Note 952: Parameter 'node_count' (line 11) could be declared const
+    --- Eff. C++ 3rd Ed. item 3
+graph.h  11  Info 830: Location cited in prior message
+        _
+        }
+graph.h  17  Info 1762: Member function 'Graph::GetNodeCount(void)' could be
+    made const --- Eff. C++ 3rd Ed. item 3
+                                                                                       _
+                assert((0 <= index && index < in_edges_.size()) && "index out of range");
+graph.h  19  Warning 574: Signed-unsigned mix with relational
+graph.h  19  Info 737: Loss of sign in promotion from int to unsigned long long
+                                      _
+                return in_edges_[index];
+graph.h  20  Info 732: Loss of sign (arg. no. 1) (int to unsigned long long)
+graph.h  20  Info 747: Significant prototype coercion (arg. no. 1) int to
+    unsigned long long
+        _
+        }
+graph.h  21  Note 952: Parameter 'index' (line 18) could be declared const ---
+    Eff. C++ 3rd Ed. item 3
+graph.h  18  Info 830: Location cited in prior message
+                                                                                        _
+                assert((0 <= index && index < out_edges_.size()) && "index out of range");
+graph.h  23  Warning 574: Signed-unsigned mix with relational
+graph.h  23  Info 737: Loss of sign in promotion from int to unsigned long long
+                                       _
+                return out_edges_[index];
+graph.h  24  Info 732: Loss of sign (arg. no. 1) (int to unsigned long long)
+graph.h  24  Info 747: Significant prototype coercion (arg. no. 1) int to
+    unsigned long long
+        _
+        }
+graph.h  25  Note 952: Parameter 'index' (line 22) could be declared const ---
+    Eff. C++ 3rd Ed. item 3
+graph.h  22  Info 830: Location cited in prior message
+ _
+#endif
+
+graph.h  30  Info 783: Line does not end with new-line
+          _
+  typedef basic_stringbuf<char>         stringbuf;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  147 
+    Error 40: Undeclared identifier 'basic_stringbuf'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  147 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  147 
+    Error 19: Useless Declaration
+          _
+  typedef basic_istringstream<char>     istringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  150 
+    Error 40: Undeclared identifier 'basic_istringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  150 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  150 
+    Error 19: Useless Declaration
+          _
+  typedef basic_ostringstream<char>     ostringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  153 
+    Error 40: Undeclared identifier 'basic_ostringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  153 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  153 
+    Error 19: Useless Declaration
+          _
+  typedef basic_stringstream<char>      stringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  156 
+    Error 40: Undeclared identifier 'basic_stringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  156 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  156 
+    Error 19: Useless Declaration
+          _
+  typedef basic_stringbuf<wchar_t>      wstringbuf;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  187 
+    Error 40: Undeclared identifier 'basic_stringbuf'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  187 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  187 
+    Error 19: Useless Declaration
+          _
+  typedef basic_istringstream<wchar_t>  wistringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  190 
+    Error 40: Undeclared identifier 'basic_istringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  190 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  190 
+    Error 19: Useless Declaration
+          _
+  typedef basic_ostringstream<wchar_t>  wostringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  193 
+    Error 40: Undeclared identifier 'basic_ostringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  193 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  193 
+    Error 19: Useless Declaration
+          _
+  typedef basic_stringstream<wchar_t>   wstringstream;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  196 
+    Error 40: Undeclared identifier 'basic_stringstream'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  196 
+    Error 10: Expecting ';'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  196 
+    Error 19: Useless Declaration
+                _
+    basic_string<_CharT, _Traits, _Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4780  Error 40: Undeclared identifier 'basic_string'
+                                _
+    operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4781  Error 10: Expecting ',' or ')'
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4783  Error 49: Expected a type
+                _
+    basic_string<_CharT,_Traits,_Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4796  Error 10: Expecting identifier or other declarator
+                _
+    basic_string<_CharT,_Traits,_Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4807  Error 10: Expecting identifier or other declarator
+                       _
+    inline basic_string<_CharT, _Traits, _Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4817  Error 10: Expecting identifier or other declarator
+                       _
+    inline basic_string<_CharT, _Traits, _Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4833  Error 10: Expecting identifier or other declarator
+                                 _
+    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4902  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) == 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4904  Error 49: Expected a type
+                                 _
+    operator==(const basic_string<_CharT>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4909  Error 10: Expecting ',' or ')'
+    _
+    { return (__lhs.size() == __rhs.size()
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4911  Error 49: Expected a type
+                                 _
+               const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4924  Error 10: Expecting ',' or ')'
+    _
+    { return __rhs.compare(__lhs) == 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4925  Error 49: Expected a type
+                                 _
+    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4935  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) == 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4937  Error 49: Expected a type
+                                 _
+    operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4948  Error 10: Expecting ',' or ')'
+    _
+    { return !(__lhs == __rhs); }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4950  Error 49: Expected a type
+                                 _
+               const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4961  Error 10: Expecting ',' or ')'
+    _
+    { return !(__lhs == __rhs); }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4962  Error 49: Expected a type
+                                 _
+    operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4972  Error 10: Expecting ',' or ')'
+    _
+    { return !(__lhs == __rhs); }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4974  Error 49: Expected a type
+                                _
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4985  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) < 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4987  Error 49: Expected a type
+                                _
+    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4997  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) < 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    4999  Error 49: Expected a type
+                                _
+              const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5010  Error 10: Expecting ',' or ')'
+    _
+    { return __rhs.compare(__lhs) > 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5011  Error 49: Expected a type
+                                _
+    operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5022  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) > 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5024  Error 49: Expected a type
+                                _
+    operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5034  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) > 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5036  Error 49: Expected a type
+                                _
+              const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5047  Error 10: Expecting ',' or ')'
+    _
+    { return __rhs.compare(__lhs) < 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5048  Error 49: Expected a type
+                                 _
+    operator<=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5059  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) <= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5061  Error 49: Expected a type
+                                 _
+    operator<=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5071  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) <= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5073  Error 49: Expected a type
+                                 _
+               const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5084  Error 10: Expecting ',' or ')'
+    _
+    { return __rhs.compare(__lhs) >= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5085  Error 49: Expected a type
+                                 _
+    operator>=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5096  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) >= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5098  Error 49: Expected a type
+                                 _
+    operator>=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5108  Error 10: Expecting ',' or ')'
+    _
+    { return __lhs.compare(__rhs) >= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5110  Error 49: Expected a type
+                               _
+             const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5121  Error 10: Expecting ',' or ')'
+    _
+    { return __rhs.compare(__lhs) <= 0; }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5122  Error 49: Expected a type
+                     _
+    swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5133  Error 10: Expecting ',' or ')'
+    _
+    { __lhs.swap(__rhs); }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5135  Error 49: Expected a type
+                           _
+               basic_string<_CharT, _Traits, _Alloc>& __str);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5153  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5153  Error 49: Expected a type
+                                                      _
+    operator>>(basic_istream<char>& __is, basic_string<char>& __str);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5157  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5157  Error 49: Expected a type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5157  Error 1098: Function template specialization 'std::operator>>(std::basic_istream<char>
+    &, int)' does not match any function template
+                                 _
+               const basic_string<_CharT, _Traits, _Alloc>& __str)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5171  Error 10: Expecting ',' or ')'
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5172  Error 49: Expected a type
+                        _
+            basic_string<_CharT, _Traits, _Alloc>& __str, _CharT __delim);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5194  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5194  Error 49: Expected a type
+                        _
+            basic_string<_CharT, _Traits, _Alloc>& __str)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5211  Error 10: Expecting ',' or ')'
+    _
+    { return std::getline(__is, __str, __is.widen('\n')); }
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5212  Error 49: Expected a type
+                                                   _
+    getline(basic_istream<char>& __in, basic_string<char>& __str,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5232  Error 10: Expecting ',' or ')'
+                         _
+            char __delim);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5233  Error 49: Expected a type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5233  Error 1098: Function template specialization 'std::getline(std::basic_istream<char>
+    &, int)' does not match any function template
+                                                      _
+    getline(basic_istream<wchar_t>& __in, basic_string<wchar_t>& __str,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5238  Error 10: Expecting ',' or ')'
+                            _
+            wchar_t __delim);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5239  Error 49: Expected a type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.h 
+    5239  Error 1098: Function template specialization 'std::getline(std::basic_istream<wchar_t>
+    &, int)' does not match any function template
+                               _
+    const typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    53  Error 10: Expecting identifier or other declarator
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    58  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    58  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    58  Error 10: Expecting ';'
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::pointer
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    135  Error 40: Undeclared identifier 'basic_string'
+    _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    136  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    136  Error 10: Expecting ';'
+                  _
+      basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    167  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    167  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    167  Error 10: Expecting ';'
+                  _
+      basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    210  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    241  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    258  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    284  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    314  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    338  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    351  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    362  Error 40: Undeclared identifier 'basic_string'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    363  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    363  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    363  Error 10: Expecting ';'
+                  _
+      basic_string<_CharT, _Traits, _Alloc>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    382  Error 40: Undeclared identifier 'basic_string'
+                  _
+      basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    383  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    383  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    383  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    395  Error 40: Undeclared identifier 'basic_string'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    396  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    396  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    396  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    424  Error 40: Undeclared identifier 'basic_string'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    425  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    425  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    425  Error 10: Expecting ';'
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    477  Error 40: Undeclared identifier 'basic_string'
+    _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    478  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    478  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1150  Error 10: Expecting identifier or other declarator
+                _
+    basic_string<_CharT, _Traits, _Alloc>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1166  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1180  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1203  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1221  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1242  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1259  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1274  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1295  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1307  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1318  Error 10: Expecting identifier or other declarator
+                         _
+    typename basic_string<_CharT, _Traits, _Alloc>::size_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1339  Error 10: Expecting identifier or other declarator
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1360  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1360  Error 36: redefining the storage class of symbol 'std::basic_string'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1360  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1375  Error 10: Expecting ';'
+                _
+    basic_string<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1393  Error 10: Expecting ';'
+                 _
+    basic_string <_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1408  Error 10: Expecting ';'
+                 _
+    basic_string <_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1424  Error 10: Expecting ';'
+                           _
+               basic_string<_CharT, _Traits, _Alloc>& __str)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1442  Error 40: Undeclared identifier 'basic_string'
+                        _
+            basic_string<_CharT, _Traits, _Alloc>& __str, _CharT __delim)
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1514  Error 10: Expecting ',' or ')'
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1515  Error 49: Expected a type
+                                    _
+  extern template class basic_string<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1577  Error 10: Expecting identifier or other declarator
+                                     _
+    operator>>(basic_istream<char>&, string&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1580  Error 40: Undeclared identifier 'string'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1580  Error 1098: Function template specialization 'std::operator>>(std::basic_istream<char>
+    &, int &)' does not match any function template
+                                                 _
+    operator<<(basic_ostream<char>&, const string&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1583  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1583  Error 49: Expected a type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1583  Error 1098: Function template specialization 'std::operator<<(std::basic_ostream<char>
+    &, int)' does not match any function template
+                                  _
+    getline(basic_istream<char>&, string&, char);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1586  Error 40: Undeclared identifier 'string'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1586  Error 1098: Function template specialization 'std::getline(std::basic_istream<char>
+    &, int &, char)' does not match any function template
+                                  _
+    getline(basic_istream<char>&, string&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1589  Error 40: Undeclared identifier 'string'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1589  Error 1098: Function template specialization 'std::getline(std::basic_istream<char>
+    &, int &)' does not match any function template
+                                    _
+  extern template class basic_string<wchar_t>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1592  Error 10: Expecting identifier or other declarator
+                                        _
+    operator>>(basic_istream<wchar_t>&, wstring&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1595  Error 40: Undeclared identifier 'wstring'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1595  Error 1098: Function template specialization 'std::operator>>(std::basic_istream<wchar_t>
+ &, int &)' does not match any function template
+                                                     _
+    operator<<(basic_ostream<wchar_t>&, const wstring&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1598  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1598  Error 49: Expected a type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1598  Error 1098: Function template specialization 'std::operator<<(std::basic_ostream<wchar_t>
+ &, int)' does not match any function template
+                                     _
+    getline(basic_istream<wchar_t>&, wstring&, wchar_t);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1601  Error 40: Undeclared identifier 'wstring'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1601  Error 1098: Function template specialization 'std::getline(std::basic_istream<wchar_t>
+    &, int &, wchar_t)' does not match any function template
+                                     _
+    getline(basic_istream<wchar_t>&, wstring&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1604  Error 40: Undeclared identifier 'wstring'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\basic_string.tcc 
+    1604  Error 1098: Function template specialization 'std::getline(std::basic_istream<wchar_t>
+    &, int &)' does not match any function template
+                                                                    _
+               bool /* _Is_pod_comparator */ = __is_pod(_Key_compare)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol '_Key_compare' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol '_Key_compare' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol '_Key_compare' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol '_Key_compare' typedef'ed at location unknown used in
+    expression
+    _
+    name() const;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    245  Error 10: Expecting ';'
+                                   _
+      operator()(const basic_string<_Char, _Traits, _Alloc>& __s1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    284  Error 10: Expecting ',' or ')'
+                                                                   _
+                 const basic_string<_Char, _Traits, _Alloc>& __s2) const;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    285  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    285  Error 49: Expected a type
+                      _
+    locale::id collate<_CharT>::id;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    784  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    784  Error 36: redefining the storage class of symbol 'std::__created'
+    (static data vs. type), conflicts with line 147, file C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iosfwd  147 
+    Info 830: Location cited in prior message
+                      _
+    locale::id collate<_CharT>::id;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    784  Error 10: Expecting ';'
+    _
+    collate<char>::_M_compare(const char*, const char*) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Error 40: Undeclared identifier 'collate'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Error 10: Expecting ';'
+    _
+    collate<char>::_M_transform(char*, const char*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    793  Error 40: Undeclared identifier 'collate'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    793  Error 18: Symbol 'std::__created' redeclared (signed/unsigned,precision)
+    conflicts with line 789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<char>::_M_transform(char*, const char*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    793  Error 31: Redefinition of symbol 'std::__created' compare with line
+    789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<char>::_M_transform(char*, const char*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    793  Error 10: Expecting ';'
+    _
+    collate<wchar_t>::_M_compare(const wchar_t*, const wchar_t*) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    798  Error 40: Undeclared identifier 'collate'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    798  Error 18: Symbol 'std::__created' redeclared (signed/unsigned,precision)
+    conflicts with line 789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<wchar_t>::_M_compare(const wchar_t*, const wchar_t*) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    798  Error 31: Redefinition of symbol 'std::__created' compare with line
+    789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<wchar_t>::_M_compare(const wchar_t*, const wchar_t*) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    798  Error 10: Expecting ';'
+    _
+    collate<wchar_t>::_M_transform(wchar_t*, const wchar_t*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    802  Error 40: Undeclared identifier 'collate'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    802  Error 18: Symbol 'std::__created' redeclared (signed/unsigned,precision)
+    conflicts with line 789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<wchar_t>::_M_transform(wchar_t*, const wchar_t*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    802  Error 31: Redefinition of symbol 'std::__created' compare with line
+    789
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+    _
+    collate<wchar_t>::_M_transform(wchar_t*, const wchar_t*, size_t) const throw();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    802  Error 10: Expecting ';'
+                                 _
+    operator()(const basic_string<_CharT, _Traits, _Alloc>& __s1,
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    81  Error 10: Expecting ',' or ')'
+    _
+    {
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    83  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    83  Error 49: Expected a type
+           _
+    collate<_CharT>::_M_compare(const _CharT*, const _CharT*) const throw ()
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    149  Error 10: Expecting ';'
+           _
+    collate<_CharT>::_M_transform(_CharT*, const _CharT*, size_t) const throw ()
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    155  Error 10: Expecting ';'
+           _
+    collate<_CharT>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    160  Error 10: Expecting ';'
+                    _
+    typename collate<_CharT>::string_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    198  Error 40: Undeclared identifier 'collate'
+    _
+    collate<_CharT>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    199  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    199  Error 10: Expecting ';'
+           _
+    collate<_CharT>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    255  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    255  Error 36: redefining the storage class of symbol 'std::collate'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    255  Error 10: Expecting ';'
+                        _
+  extern template class collate<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    270  Error 40: Undeclared identifier 'collate'
+                        _
+  extern template class collate_byname<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    271  Error 40: Undeclared identifier 'collate_byname'
+                 _
+    const collate<char>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    274  Error 10: Expecting identifier or other declarator
+                     _
+    use_facet<collate<char> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    275  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    275  Error 1098: Function template specialization 'std::use_facet<std::collate>()'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    275  Error 129: declaration expected, identifier 'std::use_facet' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    275  Error 19: Useless Declaration
+                     _
+    has_facet<collate<char> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Error 1098: Function template specialization 'std::has_facet<std::collate>()'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Error 36: redefining the storage class of symbol 'std::has_facet'
+    (static data vs. function), conflicts with location unknown
+                               _
+  extern template class collate<wchar_t>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    282  Error 10: Expecting identifier or other declarator
+                     _
+    use_facet<collate<wchar_t> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    287  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    287  Error 1098: Function template specialization 'std::use_facet<std::collate>()'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    287  Error 129: declaration expected, identifier 'std::use_facet' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    287  Error 19: Useless Declaration
+                     _
+    has_facet<collate<wchar_t> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    291  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    291  Error 1098: Function template specialization 'std::has_facet<std::collate>()'
+    does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    291  Error 36: redefining the storage class of symbol 'std::has_facet'
+    (function vs. static data), conflicts with line 279
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Info 830: Location cited in prior message
+                      _
+    has_facet<collate<wchar_t> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    291  Error 36: redefining the storage class of symbol 'std::has_facet'
+    (static data vs. function), conflicts with line 279
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Info 830: Location cited in prior message
+                      _
+    has_facet<collate<wchar_t> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    291  Error 31: Redefinition of symbol 'std::has_facet' compare with line
+    279
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.tcc 
+    279  Info 830: Location cited in prior message
+                                  _
+    __cow_string(const std::string&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept  56 
+    Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept  56 
+    Error 49: Expected a type
+                      _
+  typedef basic_string<char> __sso_string;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept  67 
+    Error 10: Expecting identifier or other declarator
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept  67 
+    Error 129: declaration expected, identifier 'std::__sso_string' ignored
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept  67 
+    Error 19: Useless Declaration
+                            _
+    logic_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    120  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    120  Error 49: Expected a type
+                                      _
+    explicit domain_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    145  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    145  Error 49: Expected a type
+                                          _
+    explicit invalid_argument(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    156  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    156  Error 49: Expected a type
+                                      _
+    explicit length_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    168  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    168  Error 49: Expected a type
+                                      _
+    explicit out_of_range(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    180  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    180  Error 49: Expected a type
+                              _
+    runtime_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    199  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    199  Error 49: Expected a type
+                                     _
+    explicit range_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    223  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    223  Error 49: Expected a type
+                                        _
+    explicit overflow_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    234  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    234  Error 49: Expected a type
+                                         _
+    explicit underflow_error(const string& __arg);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    245  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\stdexcept 
+    245  Error 49: Expected a type
+                          _
+      failure(const string& __str);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\ios_base.h 
+    253  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\ios_base.h 
+    253  Error 49: Expected a type
+                               _
+                   basic_string<_CharT2, _Traits2, _Alloc>&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\streambuf 
+    169  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\streambuf 
+    169  Error 49: Expected a type
+                            _
+                basic_string<_CharT2, _Traits2, _Alloc>&, _CharT2);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\streambuf 
+    174  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\streambuf 
+    174  Error 49: Expected a type
+                                _
+                    const string& __grouping_tmp) throw ();
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    141  Error 10: Expecting ',' or ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    141  Error 49: Expected a type
+          _
+    const numpunct<char>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1306  Error 40: Undeclared identifier 'numpunct'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1306  Error 18: Symbol 'std::__created' redeclared (qualification,signed/unsigned,precision)
+    conflicts with line 789, file C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+          _
+    const numpunct<char>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1306  Error 31: Redefinition of symbol 'std::__created' compare with line
+    789, file C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+          _
+    const numpunct<char>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1306  Error 10: Expecting ';'
+                      _
+    has_facet<numpunct<char> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 40: Undeclared identifier 'numpunct'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 10: Expecting '('
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 1098: Function template specialization 'std::has_facet<numpunct<char>>(const
+    locale&)>()' does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1323  Error 36: redefining the storage class of symbol 'std::has_facet'
+    (static data vs. function), conflicts with location unknown
+          _
+    const numpunct<wchar_t>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1345  Error 40: Undeclared identifier 'numpunct'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1345  Error 31: Redefinition of symbol 'std::__created' compare with line
+    789, file C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_classes.h 
+    789  Info 830: Location cited in prior message
+          _
+    const numpunct<wchar_t>&
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1345  Error 10: Expecting ';'
+                      _
+    has_facet<numpunct<wchar_t> >(const locale&);
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 40: Undeclared identifier 'numpunct'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 10: Expecting '('
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 26: Expected an expression, found 'const'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 10: Expecting ')'
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 10: Expecting >
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 1098: Function template specialization 'std::has_facet<numpunct<wchar_t>>(const
+    locale&)>()' does not match any function template
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\locale_facets.tcc 
+    1362  Error 36: redefining the storage class of symbol 'std::has_facet'
+    (static data vs. function), conflicts with location unknown
+                   _
+        ~Utils() = default;
+utils.h  14  Error 1008: In declaration of 'Utils::~Utils(void)', did not
+    expect '= default'; text ignored
+                                    _
+        int ParseArgumentInt(string arg, int init_argument, string usage);
+utils.h  15  Error 40: Undeclared identifier 'string'
+utils.h  15  Warning 601: No explicit type for symbol 'arg', int assumed
+utils.h  15  Error 40: Undeclared identifier 'string'
+utils.h  15  Warning 601: No explicit type for symbol 'usage', int assumed
+               _
+        string ParseArgumentString(string arg, string init_argument, string usage);
+utils.h  16  Warning 601: No explicit type for symbol 'Utils::string', int
+    assumed
+utils.h  16  Note 1925: Symbol 'Utils::string' is a public data member --
+    Effective C++ #20 & Eff. C++ 3rd Ed. item 22
+utils.h  16  Error 10: Expecting ';'
+                                          _
+        double ParseArgumentDouble(string arg, double init_argument, string usage);
+utils.h  17  Error 40: Undeclared identifier 'string'
+utils.h  17  Warning 601: No explicit type for symbol 'arg', int assumed
+utils.h  17  Error 40: Undeclared identifier 'string'
+utils.h  17  Warning 601: No explicit type for symbol 'usage', int assumed
+            _
+        map<string, string> arguments_; 
+utils.h  19  Error 40: Undeclared identifier 'string'
+utils.h  19  Error 1054: template variable declaration expects a type, int
+    assumed
+utils.h  19  Error 10: Expecting >
+utils.h  19  Error 1073: Insufficient number of template parameters for
+    'std::map<<1>,<2>,<3>,<4>>'; int assumed
+utils.h  19  Error 40: Undeclared identifier 'string'
+utils.h  19  Error 1054: template variable declaration expects a type, int
+    assumed
+utils.h  19  Error 10: Expecting >
+utils.h  19  Error 1073: Insufficient number of template parameters for
+    'std::map<<1>,<2>,<3>,<4>>'; int assumed
+                                                                    _
+               bool /* _Is_pod_comparator */ = __is_pod(_Key_compare)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 1048: expected a constant expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 1048: expected a constant expression
+_
+};
+utils.h  20  Info 1712: default constructor not defined for class 'Utils'
+ _
+#endif
+
+utils.h  21  Info 783: Line does not end with new-line
+               _
+        string name;
+model.h  11  Warning 601: No explicit type for symbol 'Label::string', int
+    assumed
+model.h  11  Error 10: Expecting ';'
+                  _
+        Model() = default;
+model.h  16  Error 1008: In declaration of 'Model::Model(void)', did not expect
+    '= default'; text ignored
+                   _
+        ~Model() = default;
+model.h  17  Error 1008: In declaration of 'Model::~Model(void)', did not
+    expect '= default'; text ignored
+                                                                            _
+        bool FGoStepSizeByLineSearch(int u, vector<double> &gradient, const int MAX_ITER = 10);
+model.h  34  Note 963: Qualifier const or volatile precedes a type; use +fqb to
+    reverse the test
+                                                                               _
+        bool EtaGoStepSizeByLineSearch(vector<vector<double>> &gradient, const int MAX_ITER = 10);
+model.h  38  Note 963: Qualifier const or volatile precedes a type; use +fqb to
+    reverse the test
+                                 _
+        void MLEGradAscent(const int MAX_ITER = 100, const int RECORD_PERIOD = 10);
+model.h  40  Note 963: Qualifier const or volatile precedes a type; use +fqb to
+    reverse the test
+model.h  40  Note 963: Qualifier const or volatile precedes a type; use +fqb to
+    reverse the test
+               _
+        string GenerateModelName(int iteration);
+model.h  41  Warning 601: No explicit type for symbol 'Model::string', int
+    assumed
+model.h  41  Note 1925: Symbol 'Model::string' is a public data member --
+    Effective C++ #20 & Eff. C++ 3rd Ed. item 22
+model.h  41  Error 10: Expecting ';'
+                   _
+        void SaveF(string &model_name);
+model.h  42  Error 40: Undeclared identifier 'string'
+model.h  42  Warning 601: No explicit type for symbol 'model_name', int assumed
+                     _
+        void SaveEta(string &model_name);
+model.h  43  Error 40: Undeclared identifier 'string'
+model.h  43  Warning 601: No explicit type for symbol 'model_name', int assumed
+                             _
+        void SaveData(string model_name);
+model.h  44  Error 40: Undeclared identifier 'string'
+model.h  44  Warning 601: No explicit type for symbol 'model_name', int assumed
+               _
+        string output_file_perfix_;     // Output Graph data prefix
+model.h  48  Warning 601: No explicit type for symbol 'Model::string', int
+    assumed
+model.h  48  Error 148: member 'Model::string' previously declared at line 41
+model.h  41  Info 830: Location cited in prior message
+               _
+        string output_file_perfix_;     // Output Graph data prefix
+model.h  48  Note 1925: Symbol 'Model::string' is a public data member --
+    Effective C++ #20 & Eff. C++ 3rd Ed. item 22
+model.h  48  Error 38: Offset of symbol 'Model::string' inconsistent (conflicts
+    with line 41)
+model.h  41  Info 830: Location cited in prior message
+               _
+        string output_file_perfix_;     // Output Graph data prefix
+model.h  48  Error 10: Expecting ';'
+               _
+        string input_graph_filename_;   // Input edgelist file name
+model.h  49  Warning 601: No explicit type for symbol 'Model::string', int
+    assumed
+model.h  49  Error 148: member 'Model::string' previously declared at line 41
+model.h  41  Info 830: Location cited in prior message
+               _
+        string input_graph_filename_;   // Input edgelist file name
+model.h  49  Note 1925: Symbol 'Model::string' is a public data member --
+    Effective C++ #20 & Eff. C++ 3rd Ed. item 22
+model.h  49  Error 38: Offset of symbol 'Model::string' inconsistent (conflicts
+    with line 41)
+model.h  41  Info 830: Location cited in prior message
+               _
+        string input_graph_filename_;   // Input edgelist file name
+model.h  49  Error 10: Expecting ';'
+               _
+        string input_label_filename_;   // Input file name for node names (Node ID, Node label)
+model.h  50  Warning 601: No explicit type for symbol 'Model::string', int
+    assumed
+model.h  50  Error 148: member 'Model::string' previously declared at line 41
+model.h  41  Info 830: Location cited in prior message
+               _
+        string input_label_filename_;   // Input file name for node names (Node ID, Node label)
+model.h  50  Note 1925: Symbol 'Model::string' is a public data member --
+    Effective C++ #20 & Eff. C++ 3rd Ed. item 22
+model.h  50  Error 38: Offset of symbol 'Model::string' inconsistent (conflicts
+    with line 41)
+model.h  41  Info 830: Location cited in prior message
+               _
+        string input_label_filename_;   // Input file name for node names (Node ID, Node label)
+model.h  50  Error 10: Expecting ';'
+                                                                    _
+               bool /* _Is_pod_comparator */ = __is_pod(_Key_compare)>
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 1048: expected a constant expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 78: Symbol 'less<int>' typedef'ed at location unknown used in
+    expression
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\stl_tree.h 
+    579  Error 1048: expected a constant expression
+ _
+#endif
+
+model.h  75  Info 783: Line does not end with new-line
+         _
+#include <string>
+common.h  3  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\string'
+         _
+#include <vector>
+common.h  4  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\vector'
+              _
+inline string TimeString() {
+common.h  7  Error 129: declaration expected, identifier 'string' ignored
+common.h  7  Info 745: function 'TimeString(void)' has no explicit type or
+    class, int assumed
+                    _
+        time(&timep);
+common.h  9  Warning 534: Ignoring return value of function 'time(long long *)'
+    (compare with line 212, file C:\MinGW\w64\mingw64\bin\..\lib\gcc\x86_64-w64-mingw32\5.2.0\..\..\..\..\x86_64-w64-mingw32\include\time.h
+)
+C:\MinGW\w64\mingw64\bin\..\lib\gcc\x86_64-w64-mingw32\5.2.0\..\..\..\..\x86_64-w64-mingw32\include\time.h 
+    212  Info 830: Location cited in prior message
+               _
+        string t = ctime(&timep);
+common.h  10  Warning 522: Highest operation, symbol reference 'string', lacks
+    side-effects
+common.h  10  Error 10: Expecting ';'
+               _
+        return t.substr(0, t.length() - 1);
+common.h  11  Error 40: Undeclared identifier 't'
+common.h  11  Error 10: Expecting a structure or union
+common.h  11  Error 1013: Symbol 'substr' not a member of class ''
+common.h  11  Error 1055: Symbol 'substr' undeclared, assumed to return int
+common.h  11  Info 746: call to function 'substr()' not made in the presence of
+    a prototype
+common.h  11  Error 40: Undeclared identifier 't'
+common.h  11  Error 10: Expecting a structure or union
+common.h  11  Error 1013: Symbol 'length' not a member of class ''
+common.h  11  Error 1055: Symbol 'length' undeclared, assumed to return int
+common.h  11  Info 746: call to function 'length()' not made in the presence of
+    a prototype
+_
+#endif
+
+common.h  53  Info 783: Line does not end with new-line
+                   _
+      friend class messages<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\codecvt.h 
+    341  Error 40: Undeclared identifier 'messages'
+                   _
+      friend class messages<wchar_t>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\codecvt.h 
+    404  Error 40: Undeclared identifier 'messages'
+                            _
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    44  Error 40: Undeclared identifier 'basic_stringbuf'
+    _
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    45  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    45  Error 10: Expecting ';'
+                            _
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    78  Error 10: Expecting identifier or other declarator
+                            _
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    129  Error 10: Expecting identifier or other declarator
+                            _
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::pos_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    147  Error 10: Expecting identifier or other declarator
+                            _
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::pos_type
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    195  Error 10: Expecting identifier or other declarator
+                   _
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    226  Error 1062: template must be either a class or a function
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    226  Error 36: redefining the storage class of symbol 'std::basic_stringbuf'
+    (static data vs. type), conflicts with location unknown
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    226  Error 10: Expecting ';'
+                   _
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    257  Error 10: Expecting ';'
+                        _
+  extern template class basic_stringbuf<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    272  Error 40: Undeclared identifier 'basic_stringbuf'
+                        _
+  extern template class basic_istringstream<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    273  Error 40: Undeclared identifier 'basic_istringstream'
+                        _
+  extern template class basic_ostringstream<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    274  Error 40: Undeclared identifier 'basic_ostringstream'
+                        _
+  extern template class basic_stringstream<char>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    275  Error 40: Undeclared identifier 'basic_stringstream'
+                                       _
+  extern template class basic_stringbuf<wchar_t>;
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\sstream.tcc 
+    278  Error 10: Expecting identifier or other declarator
+         _
+#include <iostream>
+model.cpp  6  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\iostream'
+         _
+#include <ctime>
+model.cpp  7  Warning 537: Repeated include file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ctime'
+model.cpp  7  Warning 451: Header file 'C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\ctime'
+    repeatedly included but does not have a standard include guard
+
+    
+ _
+#error This file requires compiler and library support for the \
+C:\MinGW\w64\mingw64\lib\gcc\..\..\x86_64-w64-mingw32\include\c++\bits\c++0x_warning.h 
+    32  Error 309: #error This file requires compiler and library support for
+    the \
+
+---
+ output placed in _LINT.TMP
