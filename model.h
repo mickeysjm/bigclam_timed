@@ -62,6 +62,8 @@ private:
 	double MAX_F_; // min value for F
 	double MIN_ETA_; // max value for Eta
 	double MAX_ETA_; // min value for Eta
+	double MIN_P_; // min probability for P(u, v)
+	double MAX_P_; // max probability for P(u, v)
 
 	int community_count_; // Number of Community
 	Graph graph_;	// Input graph data

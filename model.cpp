@@ -24,6 +24,8 @@ void Model::Init(Utils & utils) {
 	MAX_F_ = 1000.0;
 	MIN_ETA_ = 0.0;
 	MAX_ETA_ = 1000.0;
+	MIN_P_ = 0.0001;
+	MAX_P_ = 0.9999;
 	cerr << "Model initiate done" << TimeString() << endl;
 }
 
@@ -70,7 +72,7 @@ void Model::LoadLabel() {
 		fin >> label_[node].date;
 	}
 	sort(label_.begin(), label_.end());
-	for(int i = 0; i < label_.size(); ++i)
+	for (int i = 0; i < label_.size(); ++i)
 		id2order_.insert(pair<int, int>(label_[i].id, i));
 	cerr << "Load Label Done. " << TimeString() << endl;
 }
@@ -150,7 +152,7 @@ void Model::InitNeighbourCommunity(int community_count) {
 	sort(conductances.begin(), conductances.end());
 	cout << "conductance computation completed " << TimeString() << endl;
 	ofstream fout("conductance.txt");
-	for(int i = 0; i < conductances.size(); ++i)
+	for (int i = 0; i < conductances.size(); ++i)
 		fout << conductances[i].first << '\t' << conductances[i].second << '\n';
 	fout.close();
 
@@ -257,7 +259,8 @@ void Model::FGradientForRow(int u, vector<double> &gradient) {
 	for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 		int v = graph_.GetInNeighbour(u)[i];
 		double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-		double argument = exp(-fu_eta_fv) / (1.00000000001 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+		double p_uv = min(max(exp(-fu_eta_fv), MIN_P_), MAX_P_);
+		double argument = p_uv / (1 - p_uv) + 1; // this '1' means the second part of the fomulation
 		for (int c = 0; c < community_count_; ++c)
 			gradient[c] += argument * EtaF_[v][c];
 		for (int i = 0; i < gradient.size(); ++i)
@@ -280,7 +283,8 @@ double Model::FLikelihoodForRow(int u, vector<double> &Fu) {
 	for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 		int v = graph_.GetInNeighbour(u)[i];
 		double fu_eta_fv = VectorDot(Fu, EtaF_[v]);
-		double Lu = log(1 - exp(-fu_eta_fv));
+		double p_uv = min(max(exp(-fu_eta_fv), MIN_P_), MAX_P_);
+		double Lu = log(1 - p_uv);
 		L += Lu + fu_eta_fv;
 	}
 	map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
@@ -293,7 +297,8 @@ double Model::FLikelihoodForRow(int u, vector<double> &Fu) {
 	for (int i = 0; i < graph_.GetOutNeighbour(u).size(); ++i) {
 		int v = graph_.GetOutNeighbour(u)[i];
 		double fv_eta_fu = VectorDot(F_[v], EtaFu);
-		double Lu = log(1 - exp(-fv_eta_fu));
+		double p_vu = min(max(exp(-fv_eta_fu), MIN_P_), MAX_P_);
+		double Lu = log(1 - p_vu);
 		L += Lu + fv_eta_fu;
 	}
 	it = backsumF_.find(label_[u].date);
@@ -349,7 +354,8 @@ void Model::EtaGradient(vector<vector<double>> &gradient) {
 		for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 			int v = graph_.GetInNeighbour(u)[i];
 			double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-			double argument = exp(-fu_eta_fv) / (1.00000000001 - exp(-fu_eta_fv)) + 1; // this '1' means the second part of the fomulation
+			double p_uv = min(max(exp(-fu_eta_fv), MIN_P_), MAX_P_);
+			double argument = p_uv / (1.00000000001 - p_uv) + 1; // this '1' means the second part of the fomulation
 			for (int c = 0; c < community_count_; ++c)
 				tmp[c] += argument * F_[v][c];
 		}
@@ -371,7 +377,8 @@ double Model::EtaLikelihood(vector<vector<double>> &eta) {
 		for (int i = 0; i < graph_.GetInNeighbour(u).size(); ++i) {
 			int v = graph_.GetInNeighbour(u)[i];
 			double fu_eta_fv = VectorDot(F_[u], EtaF_[v]);
-			double Lu = log(1 - exp(-fu_eta_fv));
+			double p_uv = min(max(exp(-fu_eta_fv), MIN_P_), MAX_P_);
+			double Lu = log(1 - p_uv);
 			L += Lu + fu_eta_fv;
 		}
 		map<int, vector<double>>::iterator it = sumEtaF_.find(label_[u].date);
